@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Food Spot</title>
+  <style>
+    body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background: seashell;
+ }
+    header, footer {
+ background: Mistyrose;
+ color: black;
+ text-align: center;
+ padding: 1em;
+ }
+    nav {
+ background: coral;
+ text-align: center;
+ padding: 0.5em;
+ }
+    nav a { 
+color: black;
+ margin: 0 15px;
+ text-decoration: none;
+ font-weight: bold;
+ }
+    section {
+ margin: 20px;
+ padding: 20px;
+ background: white;
+ border-radius: 8px;
+ box-shadow: 0 2px 5px gray;
+ }
+    h2 {
+ color: black; 
+text-align: center;
+ margin-bottom: 15px;
+ }
+    .menu-container {
+ display: flex;
+ flex-wrap: wrap; 
+gap: 20px;
+ justify-content: center;
+ }
+    .item {
+ width: 180px;
+ text-align: center;
+ }
+    .item img {
+ width: 100%;
+ height: 120px; 
+border-radius: 5px;
+ object-fit: cover; 
+}
+    form input, form textarea, form button {
+ width: 100%;
+ margin: 10px 0;
+ padding: 10px;
+ border-radius: 4px;
+ border: 1px solid lightgray;
+ }
+    form button { 
+background: steelblue; 
+color: white; 
+border: none;
+ cursor: pointer;
+ }
+    form button:hover {
+ background: dodgerblue;
+ }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Food Spot</h1>
+    <img src="spot.jpg" alt="Logo" width="150" height="150">
+  </header>
+  <nav>
+    <a href="#soups">Soups</a>
+    <a href="#starters">Starters</a>
+    <a href="#main">Main</a>
+    <a href="#desserts">Desserts</a>
+  </nav>
+  <section id="soups">
+    <h2>Soups</h2>
+    <div class="menu-container">
+      <div class="item"><img src="hot.jpg"><p>Hot & Sour</p></div>
+      <div class="item"><img src="corn.jpg"><p>Sweet Corn</p></div>
+      <div class="item"><img src="chicken.jpg"><p>Chicken Soup</p></div>
+      <div class="item"><img src="pepper.jpg"><p>Mutton Pepper</p></div>
+    </div>
+  </section>
+  <section id="starters">
+    <h2>Starters</h2>
+    <div class="menu-container">
+      <div class="item"><img src="tikka.jpg"><p>Paneer Tikka</p></div>
+      <div class="item"><img src="rolls.jpg"><p>Spring Rolls</p></div>
+      <div class="item"><img src="tandoori.jpg"><p>Chicken Tandoori</p></div>
+      <div class="item"><img src="chilli.jpg"><p>Chilli Prawns</p></div>
+    </div>
+  </section>
+  <section id="main">
+    <h2>Main Course</h2>
+    <div class="menu-container">
+      <div class="item"><img src="veg biryani.jpg"><p>Veg Biryani</p></div>
+      <div class="item"><img src="paneer.jpg"><p>Paneer Noodles</p></div>
+      <div class="item"><img src="chicken biryani.jpg"><p>Chicken Biryani</p></div>
+      <div class="item"><img src="fried rice.jpg"><p>Egg Fried Rice</p></div>
+    </div>
+  </section>
+  <section id="desserts">
+    <h2>Desserts</h2>
+    <div class="menu-container">
+      <div class="item"><img src="gulab.jpg"><p>Gulab Jamun</p></div>
+      <div class="item"><img src="ice.jpg"><p>Ice Cream</p></div>
+      <div class="item"><img src="brownie.jpg"><p>Brownie</p></div>
+<div class="item"><img src="halwa.jpg"><p>Carrot Halwa</p></div>
+</div>
+</section>
+<section>
+<h2>Customer Review</h2>
+<form>
+<input type="text" placeholder="Name" required>
+<input type="tel" placeholder="Phone" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Your Review" rows="4" required></textarea>
+<button type="submit">Submit</button>
+</form>
+</section>
+<footer>
+<h3>Contact Us</h3>
+<p>321 Food Street, City Center</p>
+<p>+91-9234567826 | contact@thefoodspot.com</p>
+</footer>
+</body>
+</html>
